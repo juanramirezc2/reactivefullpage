@@ -1,0 +1,26 @@
+{
+  "name": "reactivefullpage",
+  "version": "1.0.0",
+  "description": "react wrapper for your full pages layouts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jg-rc/reactivefullpage.git"
+  },
+  "keywords": [
+    "fullpage",
+    "slider"
+  ],
+  "author": "jgrc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jg-rc/reactivefullpage/issues"
+  },
+  "homepage": "https://github.com/jg-rc/reactivefullpage#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}

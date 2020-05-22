@@ -1,0 +1,10 @@
+.reactivefullpage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+}
+.fullpage-item {
+  scroll-snap-align: start;
+}
