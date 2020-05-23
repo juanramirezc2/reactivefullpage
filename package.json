@@ -1,10 +1,14 @@
 {
-  "name": "reactivefullpage",
+  "name": "@codegabo/reactivefullpage",
   "version": "1.0.0",
   "description": "react wrapper for your full pages layouts",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
   },
   "repository": {
     "type": "git",
@@ -22,5 +26,16 @@
   "homepage": "https://github.com/jg-rc/reactivefullpage#readme",
   "dependencies": {
     "react": "^16.13.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "rollup": "^2.10.8"
   }
 }
