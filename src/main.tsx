@@ -1,7 +1,6 @@
 import React from 'react'
 import "index.css"
 
-export default reactive
 const reactive = ({children})=>{
   return (
     <div>
@@ -9,3 +8,4 @@ const reactive = ({children})=>{
     </div>
   )
 }
+export default reactive
