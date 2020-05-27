@@ -8,8 +8,12 @@
     "dist"
   ],
   "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config"
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup --config"
   },
   "repository": {
     "type": "git",
@@ -26,6 +30,7 @@
   },
   "homepage": "https://github.com/jg-rc/reactivefullpage#readme",
   "dependencies": {
+    "@types/react": "^16.9.35",
     "react": "^16.13.1"
   },
   "publishConfig": {
@@ -33,11 +38,14 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.8.3",
     "@babel/preset-react": "^7.9.4",
     "@rollup/plugin-babel": "^5.0.2",
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
+    "typescript": "^3.7.5",
     "rollup": "^2.10.8"
   }
 }

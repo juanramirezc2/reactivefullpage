@@ -3,8 +3,12 @@ import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 import pkg from './package.json'
 
+const extensions = [
+  '.js', '.jsx', '.ts', '.tsx',
+];
+
 export default {
-  input: 'src/main.js',
+  input: 'src/main.txs',
   output: [
     {
       file: pkg.main,
@@ -18,10 +22,15 @@ export default {
     }],
   plugins: [
     babel({
-      presets: ["@babel/preset-env","@babel/preset-react"],
+      extensions,
+      presets: ["@babel/preset-env","@babel/typescript","@babel/preset-react"],
+      plugins: [
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread"
+      ],
       exclude: 'node_modules/**',
     }),
-    resolve(),
+    resolve({ extensions }),
     commonjs()
   ],
   external: ['react']
