@@ -1,11 +1,19 @@
 import React from 'react'
 import "index.css"
 
-const reactive = ({children})=>{
+export interface LayoutProps  {
+   children: React.ReactNode
+}
+
+const Reactive = (props: LayoutProps)=>{
   return (
     <div>
-      {children.map(child=><div className="fullpage-item">{child}</div>)}
+      { React.Children.map(props.children, x => ( <div className="fullpage-item">{x}</div> )) }
     </div>
   )
 }
-export default reactive
+
+
+
+
+export default Reactive
