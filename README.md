@@ -6,7 +6,7 @@ but i enjoy building thing with react
 # how to install
 
 ```sh
-npm install reactivefullpage
+npm install @codegabo/reactivefullpage
 ```
 
 # usage
