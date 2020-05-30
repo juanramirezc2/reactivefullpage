@@ -13,7 +13,4 @@ const Reactive = (props: LayoutProps)=>{
   )
 }
 
-
-
-
 export default Reactive

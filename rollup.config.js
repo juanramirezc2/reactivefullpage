@@ -8,7 +8,7 @@ const extensions = [
 ];
 
 export default {
-  input: 'src/main.txs',
+  input: './src/main.tsx',
   output: [
     {
       file: pkg.main,
