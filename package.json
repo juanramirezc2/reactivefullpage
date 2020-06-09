@@ -1,6 +1,6 @@
 {
   "name": "@codegabo/reactivefullpage",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "react wrapper for your full pages layouts",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
