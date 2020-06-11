@@ -1,5 +1,4 @@
 import React from 'react'
-import "index.css"
 
 export interface LayoutProps  {
    children: React.ReactNode
