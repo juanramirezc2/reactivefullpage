@@ -8,6 +8,7 @@ const fullpageStyles = {
   scrollSnapPointsY: "repeat(100vh)",
   position: "fixed" as "fixed",
   overflowY: "scroll" as "scroll",
+  overflowX: "hidden" as "hidden",
   height: "100vh",
   width: "100vw",
   top: "0",
