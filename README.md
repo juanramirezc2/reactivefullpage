@@ -1,3 +1,5 @@
+# Deprecating this package in favor of https://github.com/alvarotrigo/react-fullpage
+
 # motivation 
 
 most of the designs nowadays have  some sort of full page scroller, the libraries i found where jquery plugins
